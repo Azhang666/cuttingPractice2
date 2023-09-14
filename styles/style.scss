@@ -1,0 +1,409 @@
+$thomecolor_title: rgba(170, 132, 29, 0.603);
+$thomecolor_p: rgba(85, 85, 85, 0.671);
+@mixin flexbox($direction) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+body {
+  overflow-x: hidden;
+
+  main {
+    margin: 1rem 10rem 1rem 10rem;
+    section.info {
+      @include flexbox(row);
+      justify-content: center;
+      form {
+        flex-basis: 70%;
+        box-shadow: 1px 0px 20px 5px rgba(80, 80, 80, 0.336);
+        div.box {
+          img {
+            max-width: 100%;
+          }
+          h1 {
+            font-size: 1.5rem;
+            padding: 2rem;
+            color: $thomecolor_title;
+          }
+          p.titleInfo {
+            padding: 0rem 2rem;
+            color: $thomecolor_p;
+          }
+
+          h2 {
+            font-size: 1.25rem;
+            padding: 2rem;
+            color: $thomecolor_title;
+          }
+
+          ul {
+            list-style-type: none;
+            @include flexbox(row);
+            padding-left: 2rem;
+
+            li {
+              p {
+                font-size: 1rem;
+                padding-right: 0.5rem;
+                padding-top: 0.3rem;
+                color: $thomecolor_title;
+              }
+              label {
+                font-size: 1.25rem;
+                color: $thomecolor_title;
+              }
+            }
+          }
+          p.formInfo {
+            padding: 1rem 2rem;
+            color: $thomecolor_p;
+            font-size: 0.75rem;
+          }
+          input {
+            min-width: 85%;
+            border: none;
+            border-bottom: 2px solid $thomecolor_title;
+            margin: 0rem 0rem 2rem 3rem;
+            &:focus {
+              outline: none;
+            }
+          }
+          div.infoText {
+            width: 90%;
+            height: 40%;
+            margin: 1rem 2rem 2rem 2rem;
+            padding: 2rem;
+            border: 1px dashed $thomecolor_title;
+            border-radius: 20px;
+            p {
+              font-size: 1.25rem;
+              text-align: center;
+              color: $thomecolor_title;
+            }
+          }
+          div.travelInfo {
+            @include flexbox(row);
+            justify-content: start;
+            margin: 1rem 2rem;
+            flex: 50%;
+            div.boxs {
+              width: 50%;
+              div.flex2 {
+                @include flexbox(row);
+                flex-wrap: nowrap;
+                input.travel {
+                  min-width: 0%;
+                  margin: 0rem;
+                  padding-right: 0.25rem;
+                }
+                label.travelP {
+                  border: dashed $thomecolor_title;
+                  border-radius: 20px;
+                  padding: 0.25rem;
+                  margin: 0.25rem;
+                  width: 100%;
+                  color: $thomecolor_title;
+                  font-size: 1.25rem;
+                  padding-left: 1rem;
+                }
+                input {
+                  display: none;
+                }
+                input[type="radio"]:checked + label {
+                  background-color: $thomecolor_title;
+                  border: none;
+                  padding: 0.5rem;
+                  box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+                  color: white;
+                }
+                input[type="checkbox"]:checked + label {
+                  background-color: $thomecolor_title;
+                  border: none;
+                  box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+                  padding: 0.5rem;
+                  color: white;
+                }
+              }
+            }
+          }
+          div.btnFlex {
+            @include flexbox(row);
+            justify-content: center;
+            button {
+              border: none;
+              border-radius: 20px;
+              padding: 10px;
+              box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+              font-size: 1rem;
+              color: white;
+              background-color: $thomecolor_title;
+              margin: 1rem;
+            }
+            a {
+              text-decoration: none;
+              border: none;
+              border-radius: 20px;
+              padding: 10px;
+              box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+              font-size: 1rem;
+              color: white;
+              background-color: $thomecolor_title;
+              margin: 1rem;
+              &:hover {
+                background-color: rgba(202, 158, 36, 0.603);
+              }
+            }
+          }
+          div.flow {
+            overflow-x: scroll;
+            @include flexbox(row);
+            margin: 2rem;
+            justify-content: center;
+            table {
+              tr.bgc {
+                // background-color: rgba(105, 103, 103, 0.2);
+              }
+              th {
+                font-size: 1rem;
+                color: $thomecolor_title;
+                font-weight: normal;
+                padding: 0rem 1rem;
+                text-align: center;
+              }
+              td {
+                font-size: 1rem;
+                color: $thomecolor_title;
+                text-align: left;
+                vertical-align: middle;
+                padding: 0.75rem;
+                border-right: 3px solid rgba(105, 103, 103, 0.2);
+                border-bottom: 3px solid rgba(105, 103, 103, 0.2);
+                input.inputTd {
+                  margin: 0rem;
+                  width: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  body {
+    main {
+      margin: 0rem;
+      section.info {
+        form {
+          flex-basis: 100%;
+          div.box {
+            input {
+              min-width: 85%;
+              border: none;
+              border-bottom: 2px solid $thomecolor_title;
+              margin: 0rem 2rem 2rem 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 391px) {
+  body {
+    overflow-x: hidden;
+
+    main {
+      section.info {
+        @include flexbox(row);
+        justify-content: center;
+        form {
+          div.box {
+            img {
+              min-width: 100%;
+            }
+            h1 {
+              font-size: 1rem;
+              padding: 0.25rem;
+              color: $thomecolor_title;
+            }
+            p.titleInfo {
+              padding: 0rem 0.25rem;
+              color: $thomecolor_p;
+            }
+
+            h2 {
+              font-size: 0.75rem;
+
+              color: $thomecolor_title;
+            }
+
+            ul {
+              list-style-type: none;
+              @include flexbox(row);
+              padding-left: 2rem;
+
+              li {
+                p {
+                  font-size: 1rem;
+                  padding-right: 0.5rem;
+                  padding-top: 0.3rem;
+                  color: $thomecolor_title;
+                }
+                label {
+                  font-size: 1.25rem;
+                  color: $thomecolor_title;
+                }
+              }
+            }
+            p.formInfo {
+              padding: 1rem 2rem;
+              color: $thomecolor_p;
+              font-size: 0.75rem;
+            }
+            input {
+              min-width: 50%;
+              border: none;
+              border-bottom: 2px solid $thomecolor_title;
+              margin: 0rem 0rem 2rem 3rem;
+              &:focus {
+                outline: none;
+              }
+            }
+            div.infoText {
+              width: 90%;
+              height: 40%;
+              margin: 1rem 2rem 2rem 2rem;
+              padding: 2rem;
+              border: 1px dashed $thomecolor_title;
+              border-radius: 20px;
+              p {
+                font-size: 1.25rem;
+                text-align: center;
+                color: $thomecolor_title;
+              }
+            }
+            div.travelInfo {
+              @include flexbox(row);
+              justify-content: start;
+              margin: 1rem 2rem;
+              flex: 50%;
+              div.boxs {
+                width: 50%;
+                div.flex2 {
+                  @include flexbox(row);
+                  flex-wrap: nowrap;
+                  input.travel {
+                    min-width: 0%;
+                    margin: 0rem;
+                    padding-right: 0.25rem;
+                  }
+                  label.travelP {
+                    border: dashed $thomecolor_title;
+                    border-radius: 20px;
+                    padding: 0.25rem;
+                    margin: 0.25rem;
+                    width: 100%;
+                    color: $thomecolor_title;
+                    font-size: 1.25rem;
+                    padding-left: 1rem;
+                  }
+                  input {
+                    display: none;
+                  }
+                  input[type="radio"]:checked + label {
+                    background-color: $thomecolor_title;
+                    border: none;
+                    padding: 0.5rem;
+                    box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+                    color: white;
+                  }
+                  input[type="checkbox"]:checked + label {
+                    background-color: $thomecolor_title;
+                    border: none;
+                    box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+                    padding: 0.5rem;
+                    color: white;
+                  }
+                }
+              }
+            }
+            div.btnFlex {
+              @include flexbox(row);
+              justify-content: center;
+              button {
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+                box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+                font-size: 1rem;
+                color: white;
+                background-color: $thomecolor_title;
+                margin: 1rem;
+              }
+              a {
+                text-decoration: none;
+                border: none;
+                border-radius: 20px;
+                padding: 10px;
+                box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+                font-size: 1rem;
+                color: white;
+                background-color: $thomecolor_title;
+                margin: 1rem;
+                &:hover {
+                  background-color: rgba(202, 158, 36, 0.603);
+                }
+              }
+            }
+            div.flow {
+              overflow-x: scroll;
+              @include flexbox(row);
+              margin: 2rem;
+              justify-content: center;
+              table {
+                tr.bgc {
+                  // background-color: rgba(105, 103, 103, 0.2);
+                }
+                th {
+                  font-size: 1rem;
+                  color: $thomecolor_title;
+                  font-weight: normal;
+                  padding: 0rem 1rem;
+                  text-align: center;
+                }
+                td {
+                  font-size: 1rem;
+                  color: $thomecolor_title;
+                  text-align: left;
+                  vertical-align: middle;
+                  padding: 0.75rem;
+                  border-right: 3px solid rgba(105, 103, 103, 0.2);
+                  border-bottom: 3px solid rgba(105, 103, 103, 0.2);
+                  input.inputTd {
+                    margin: 0rem;
+                    width: 0px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

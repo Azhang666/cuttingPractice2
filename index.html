@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AZhang" />
+    <meta name="description" content="住宿滿意度" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <title>住宿滿意度</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700 & display家庭 = Noto+Sans+TC:wght@700 & stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="info">
+        <form action="">
+          <div class="box">
+            <img src="./picture/hotel.jpg" alt="hotrel" />
+            <h1>住宿滿意度調查</h1>
+            <p class="titleInfo">
+              親愛的貴賓您好：
+              感謝您選擇蛋糕旅店休憩，為了提供您更好的住宿品質，請您協助填寫此份住宿滿意度調查表。
+              填寫此表單即能參加抽獎，最大獎品為免費入住總統套房一個月哦！
+              蛋糕旅店希望能讓每一位貴賓的旅程更加完美，您寶貴的建議是我們成長的動力。
+            </p>
+            <h2>基本住宿資訊</h2>
+            <ul>
+              <li><p>1</p></li>
+              <li><label for="name">姓名</label></li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="name" type="text" placeholder="請輸入文字" required />
+            <ul>
+              <li><p>2</p></li>
+              <li><label for="phone">手機</label></li>
+            </ul>
+            <p class="formInfo">若中獎將以簡訊通知，請填寫正確號碼</p>
+            <input id="phone" type="tel" placeholder="請輸入電話" required />
+            <ul>
+              <li><p>3</p></li>
+              <li><label for="Email">Email</label></li>
+            </ul>
+            <p class="formInfo">將會不定期寄送優惠訊息，請填寫正確郵件地址</p>
+            <input id="Email" type="Email" placeholder="請輸入Email" required />
+            <ul>
+              <li><p>4</p></li>
+              <li><label for="chakinNumeber">客房號碼</label></li>
+            </ul>
+            <p class="formInfo">將會不定期寄送優惠訊息，請填寫正確郵件地址</p>
+            <input
+              id="chakinNumeber"
+              type="text"
+              placeholder="請輸入客房號碼"
+            />
+            <ul>
+              <li><p>5</p></li>
+              <li><label for="chakinDate">入住日期</label></li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="chakinDate" type="date" required />
+            <ul>
+              <li><p>6</p></li>
+              <li><label for="outDate">退房日期</label></li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="outDate" type="date" required />
+            <div class="infoText">
+              <p>請您針對旅館、人員、餐廳以及客房，評估您的滿意程度</p>
+            </div>
+            <ul>
+              <li><p>7</p></li>
+              <li>
+                <label for="">飯店人員滿意度 </label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="flow">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>非常不滿意</th>
+                    <th>不滿意</th>
+                    <th>普通</th>
+                    <th>滿意</th>
+                    <th>非常滿意</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bgc">
+                    <td><label for="">櫃檯接待</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="counterReception"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="counterReception"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="counterReception"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="counterReception"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="counterReception"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">房務人員</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="housekeepingStaff"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="housekeepingStaff"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="housekeepingStaff"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="housekeepingStaff"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="housekeepingStaff"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr class="bgc">
+                    <td><label for="">司機接送</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="driverPickUp"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="driverPickUp"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="driverPickUp"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="driverPickUp"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="driverPickUp"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">整體滿意度</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li><p>8</p></li>
+              <li>
+                <label for="feeback"
+                  >針對飯店人員，還有其他建議改善事項嗎？</label
+                >
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="feeback" type="text" placeholder="請輸入文字" />
+            <ul>
+              <li><p>9</p></li>
+              <li>
+                <label for="">客房滿意度 </label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="flow">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>非常不滿意</th>
+                    <th>不滿意</th>
+                    <th>普通</th>
+                    <th>滿意</th>
+                    <th>非常滿意</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bgc">
+                    <td><label for="">整潔</label></td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy" id="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">舒適</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr class="bgc">
+                    <td><label for="">備品齊全</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="FullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="FullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="FullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="FullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="FullyEquipped"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">設備正常</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="equipmentIsNormal"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="equipmentIsNormal"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="equipmentIsNormal"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="equipmentIsNormal"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="equipmentIsNormal"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">整體滿意度</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li><p>10</p></li>
+              <li>
+                <label for="feeback_2"
+                  >針對客房，還有其他建議改善事項嗎？</label
+                >
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="feeback_2" type="text" placeholder="請輸入文字" />
+            <ul>
+              <li><p>11</p></li>
+              <li>
+                <label for="">餐廳滿意度</label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="flow">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>非常不滿意</th>
+                    <th>不滿意</th>
+                    <th>普通</th>
+                    <th>滿意</th>
+                    <th>非常滿意</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bgc">
+                    <td><label for="">食物份量</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="portionSize"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="portionSize"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="portionSize"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="portionSize"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="portionSize"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">食物口味</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="foodTaste"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="foodTaste"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="foodTaste"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="foodTaste"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="foodTaste"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr class="bgc">
+                    <td><label for="">整潔舒適</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="cleanAndComfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="cleanAndComfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="cleanAndComfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="cleanAndComfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="cleanAndComfortable"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">服務態度</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="serviceAttitude"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="serviceAttitude"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="serviceAttitude"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="serviceAttitude"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="serviceAttitude"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">上菜速度</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="servingSpeed"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="servingSpeed"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="servingSpeed"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="servingSpeed"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="servingSpeed"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">整體滿意度</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction2"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction2"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction2"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction2"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction2"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li><p>12</p></li>
+              <li>
+                <label for="feeback_3"
+                  >針對餐廳，還有其他建議改善事項嗎？
+                </label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="feeback_3" type="text" placeholder="請輸入文字" />
+            <ul>
+              <li><p>13</p></li>
+              <li>
+                <label for="">旅館滿意度</label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="flow">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>非常不滿意</th>
+                    <th>不滿意</th>
+                    <th>普通</th>
+                    <th>滿意</th>
+                    <th>非常滿意</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bgc">
+                    <td><label for="">氣氛</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="atmosphere"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="atmosphere"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="atmosphere"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="atmosphere"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="atmosphere"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">整潔</label></td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy2" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy2" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy2" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy2" id="" />
+                    </td>
+                    <td>
+                      <input class="inputTd" type="radio" name="tidy2" id="" />
+                    </td>
+                  </tr>
+                  <tr class="bgc">
+                    <td><label for="">舒適</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="comfortable"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">設施齊全</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="fullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="fullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="fullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="fullyEquipped"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="fullyEquipped"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="">整體滿意度</label></td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction3"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction3"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction3"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction3"
+                        id=""
+                      />
+                    </td>
+                    <td>
+                      <input
+                        class="inputTd"
+                        type="radio"
+                        name="overallSatisfaction3"
+                        id=""
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li><p>14</p></li>
+              <li>
+                <label for="feeback_4"
+                  >針對旅館，還有其他建議改善事項嗎？</label
+                >
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="feeback_4" type="text" placeholder="請輸入文字" />
+            <div class="infoText">
+              <p>為了提供更完善的服務，請讓我們更了解您！</p>
+            </div>
+
+            <ul>
+              <li><p>15</p></li>
+              <li>
+                <label for="">此次行程目的</label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="travelInfo">
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="radio"
+                    name="travel"
+                    id="businessTrip"
+                  />
+                  <label class="travelP" for="businessTrip">商務出差</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="radio"
+                    name="travel"
+                    id="sightseeing"
+                  />
+                  <label class="travelP" for="sightseeing">觀光旅遊</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="radio"
+                    name="travel"
+                    id="orther4"
+                  />
+                  <label class="travelP" for="orther4">其他</label>
+                </div>
+              </div>
+            </div>
+
+            <ul>
+              <li><p>16</p></li>
+              <li>
+                <label for="">為什麼會選擇入住蛋糕旅店？</label>
+              </li>
+            </ul>
+            <p class="formInfo">複選</p>
+            <div class="travelInfo">
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="fanGroup"
+                  />
+                  <label class="travelP" for="fanGroup">粉絲團</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="networkRecommendation"
+                  />
+                  <label class="travelP" for="networkRecommendation"
+                    >網路推薦</label
+                  >
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="recommendedByRelativesAndFriends"
+                  />
+                  <label class="travelP" for="recommendedByRelativesAndFriends"
+                    >親友推薦</label
+                  >
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="netAdvertisement"
+                  />
+                  <label class="travelP" for="netAdvertisement">網路廣告</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="tvAdvertisement"
+                  />
+                  <label class="travelP" for="tvAdvertisement">電視廣告</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="googleSearch"
+                  />
+                  <label class="travelP" for="googleSearch">google 搜尋</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="checkbox"
+                    name="travel"
+                    id="experience"
+                  />
+                  <label class="travelP" for="experience">過去住宿經驗</label>
+                </div>
+              </div>
+            </div>
+
+            <ul>
+              <li><p>17</p></li>
+              <li>
+                <label for="">您是否會再選擇蛋糕旅店住宿？</label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="travelInfo">
+              <div class="boxs">
+                <div class="flex2">
+                  <input class="travel" type="radio" name="question" id="yes" />
+                  <label class="travelP" for="yes">會</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input class="travel" type="radio" name="question" id="no" />
+                  <label class="travelP" for="no">不會</label>
+                </div>
+              </div>
+            </div>
+
+            <ul>
+              <li><p>18</p></li>
+              <li>
+                <label for="">是否會想向親友推薦入住蛋糕旅店？</label>
+              </li>
+            </ul>
+            <p class="formInfo"></p>
+            <div class="travelInfo">
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="radio"
+                    name="question2"
+                    id="yes2"
+                  />
+                  <label class="travelP" for="yes2">會</label>
+                </div>
+              </div>
+              <div class="boxs">
+                <div class="flex2">
+                  <input
+                    class="travel"
+                    type="radio"
+                    name="question2"
+                    id="no2"
+                  />
+                  <label class="travelP" for="no2">不會</label>
+                </div>
+              </div>
+            </div>
+
+            <h2 style="padding-bottom: 1rem">推薦服務人員</h2>
+            <p class="formInfo" style="padding-top: 0rem">
+              是否有任何服務人員提供您優良的服務令您印象深刻？若有，請您填寫該人員的姓名及推薦原因，您的支持會為該人員帶來很大的鼓勵！
+            </p>
+
+            <ul>
+              <li><p>19</p></li>
+              <li><label for="name">推薦服務人員姓名 </label></li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="name" type="text" placeholder="請輸入文字" required />
+
+            <ul>
+              <li><p>20</p></li>
+              <li><label for="name">推薦原因</label></li>
+            </ul>
+            <p class="formInfo"></p>
+            <input id="name" type="text" placeholder="請輸入文字" required />
+
+            <div class="infoText">
+              <p>最後請記得按下「送出」按鈕，才能成功送出回覆哦！</p>
+            </div>
+            <div class="btnFlex">
+              <a href="./thks.html" type="submit">送出表單</a>
+              <!-- <button type="submit">送出表單</button> -->
+              <button type="reset">重填表單</button>
+            </div>
+            <p class="formInfo" style="text-align: center; font: size 1rem">
+              您的個人資料，本公司將遵守「個人資料保護法」之規定妥善保護，僅限於內部營運規劃使用，絕不外洩。
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

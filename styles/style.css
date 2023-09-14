@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+}
+body main {
+  margin: 1rem 10rem 1rem 10rem;
+}
+body main section.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+body main section.info form {
+  flex-basis: 70%;
+  box-shadow: 1px 0px 20px 5px rgba(80, 80, 80, 0.336);
+}
+body main section.info form div.box img {
+  max-width: 100%;
+}
+body main section.info form div.box h1 {
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: rgba(170, 132, 29, 0.603);
+}
+body main section.info form div.box p.titleInfo {
+  padding: 0rem 2rem;
+  color: rgba(85, 85, 85, 0.671);
+}
+body main section.info form div.box h2 {
+  font-size: 1.25rem;
+  padding: 2rem;
+  color: rgba(170, 132, 29, 0.603);
+}
+body main section.info form div.box ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 2rem;
+}
+body main section.info form div.box ul li p {
+  font-size: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 0.3rem;
+  color: rgba(170, 132, 29, 0.603);
+}
+body main section.info form div.box ul li label {
+  font-size: 1.25rem;
+  color: rgba(170, 132, 29, 0.603);
+}
+body main section.info form div.box p.formInfo {
+  padding: 1rem 2rem;
+  color: rgba(85, 85, 85, 0.671);
+  font-size: 0.75rem;
+}
+body main section.info form div.box input {
+  min-width: 85%;
+  border: none;
+  border-bottom: 2px solid rgba(170, 132, 29, 0.603);
+  margin: 0rem 0rem 2rem 3rem;
+}
+body main section.info form div.box input:focus {
+  outline: none;
+}
+body main section.info form div.box div.infoText {
+  width: 90%;
+  height: 40%;
+  margin: 1rem 2rem 2rem 2rem;
+  padding: 2rem;
+  border: 1px dashed rgba(170, 132, 29, 0.603);
+  border-radius: 20px;
+}
+body main section.info form div.box div.infoText p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgba(170, 132, 29, 0.603);
+}
+body main section.info form div.box div.travelInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  margin: 1rem 2rem;
+  flex: 50%;
+}
+body main section.info form div.box div.travelInfo div.boxs {
+  width: 50%;
+}
+body main section.info form div.box div.travelInfo div.boxs div.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+body main section.info form div.box div.travelInfo div.boxs div.flex2 input.travel {
+  min-width: 0%;
+  margin: 0rem;
+  padding-right: 0.25rem;
+}
+body main section.info form div.box div.travelInfo div.boxs div.flex2 label.travelP {
+  border: dashed rgba(170, 132, 29, 0.603);
+  border-radius: 20px;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  width: 100%;
+  color: rgba(170, 132, 29, 0.603);
+  font-size: 1.25rem;
+  padding-left: 1rem;
+}
+body main section.info form div.box div.travelInfo div.boxs div.flex2 input {
+  display: none;
+}
+body main section.info form div.box div.travelInfo div.boxs div.flex2 input[type=radio]:checked + label {
+  background-color: rgba(170, 132, 29, 0.603);
+  border: none;
+  padding: 0.5rem;
+  box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+  color: white;
+}
+body main section.info form div.box div.travelInfo div.boxs div.flex2 input[type=checkbox]:checked + label {
+  background-color: rgba(170, 132, 29, 0.603);
+  border: none;
+  box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+  padding: 0.5rem;
+  color: white;
+}
+body main section.info form div.box div.btnFlex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+body main section.info form div.box div.btnFlex button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(170, 132, 29, 0.603);
+  margin: 1rem;
+}
+body main section.info form div.box div.btnFlex a {
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(170, 132, 29, 0.603);
+  margin: 1rem;
+}
+body main section.info form div.box div.btnFlex a:hover {
+  background-color: rgba(202, 158, 36, 0.603);
+}
+body main section.info form div.box div.flow {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 2rem;
+  justify-content: center;
+}
+body main section.info form div.box div.flow table th {
+  font-size: 1rem;
+  color: rgba(170, 132, 29, 0.603);
+  font-weight: normal;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+body main section.info form div.box div.flow table td {
+  font-size: 1rem;
+  color: rgba(170, 132, 29, 0.603);
+  text-align: left;
+  vertical-align: middle;
+  padding: 0.75rem;
+  border-right: 3px solid rgba(105, 103, 103, 0.2);
+  border-bottom: 3px solid rgba(105, 103, 103, 0.2);
+}
+body main section.info form div.box div.flow table td input.inputTd {
+  margin: 0rem;
+  width: 0px;
+}
+
+@media screen and (max-width: 1025px) {
+  body main {
+    margin: 0rem;
+  }
+  body main section.info form {
+    flex-basis: 100%;
+  }
+  body main section.info form div.box input {
+    min-width: 85%;
+    border: none;
+    border-bottom: 2px solid rgba(170, 132, 29, 0.603);
+    margin: 0rem 2rem 2rem 2rem;
+  }
+}
+@media screen and (max-width: 391px) {
+  body {
+    overflow-x: hidden;
+  }
+  body main section.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body main section.info form div.box img {
+    min-width: 100%;
+  }
+  body main section.info form div.box h1 {
+    font-size: 1rem;
+    padding: 0.25rem;
+    color: rgba(170, 132, 29, 0.603);
+  }
+  body main section.info form div.box p.titleInfo {
+    padding: 0rem 0.25rem;
+    color: rgba(85, 85, 85, 0.671);
+  }
+  body main section.info form div.box h2 {
+    font-size: 0.75rem;
+    color: rgba(170, 132, 29, 0.603);
+  }
+  body main section.info form div.box ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 2rem;
+  }
+  body main section.info form div.box ul li p {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    color: rgba(170, 132, 29, 0.603);
+  }
+  body main section.info form div.box ul li label {
+    font-size: 1.25rem;
+    color: rgba(170, 132, 29, 0.603);
+  }
+  body main section.info form div.box p.formInfo {
+    padding: 1rem 2rem;
+    color: rgba(85, 85, 85, 0.671);
+    font-size: 0.75rem;
+  }
+  body main section.info form div.box input {
+    min-width: 50%;
+    border: none;
+    border-bottom: 2px solid rgba(170, 132, 29, 0.603);
+    margin: 0rem 0rem 2rem 3rem;
+  }
+  body main section.info form div.box input:focus {
+    outline: none;
+  }
+  body main section.info form div.box div.infoText {
+    width: 90%;
+    height: 40%;
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 2rem;
+    border: 1px dashed rgba(170, 132, 29, 0.603);
+    border-radius: 20px;
+  }
+  body main section.info form div.box div.infoText p {
+    font-size: 1.25rem;
+    text-align: center;
+    color: rgba(170, 132, 29, 0.603);
+  }
+  body main section.info form div.box div.travelInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    margin: 1rem 2rem;
+    flex: 50%;
+  }
+  body main section.info form div.box div.travelInfo div.boxs {
+    width: 50%;
+  }
+  body main section.info form div.box div.travelInfo div.boxs div.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  body main section.info form div.box div.travelInfo div.boxs div.flex2 input.travel {
+    min-width: 0%;
+    margin: 0rem;
+    padding-right: 0.25rem;
+  }
+  body main section.info form div.box div.travelInfo div.boxs div.flex2 label.travelP {
+    border: dashed rgba(170, 132, 29, 0.603);
+    border-radius: 20px;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    width: 100%;
+    color: rgba(170, 132, 29, 0.603);
+    font-size: 1.25rem;
+    padding-left: 1rem;
+  }
+  body main section.info form div.box div.travelInfo div.boxs div.flex2 input {
+    display: none;
+  }
+  body main section.info form div.box div.travelInfo div.boxs div.flex2 input[type=radio]:checked + label {
+    background-color: rgba(170, 132, 29, 0.603);
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+    color: white;
+  }
+  body main section.info form div.box div.travelInfo div.boxs div.flex2 input[type=checkbox]:checked + label {
+    background-color: rgba(170, 132, 29, 0.603);
+    border: none;
+    box-shadow: 1px 0px 5px 1px rgba(80, 80, 80, 0.336);
+    padding: 0.5rem;
+    color: white;
+  }
+  body main section.info form div.box div.btnFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  body main section.info form div.box div.btnFlex button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(170, 132, 29, 0.603);
+    margin: 1rem;
+  }
+  body main section.info form div.box div.btnFlex a {
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 1px 0px 3px 3px rgba(80, 80, 80, 0.2);
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(170, 132, 29, 0.603);
+    margin: 1rem;
+  }
+  body main section.info form div.box div.btnFlex a:hover {
+    background-color: rgba(202, 158, 36, 0.603);
+  }
+  body main section.info form div.box div.flow {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 2rem;
+    justify-content: center;
+  }
+  body main section.info form div.box div.flow table th {
+    font-size: 1rem;
+    color: rgba(170, 132, 29, 0.603);
+    font-weight: normal;
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+  body main section.info form div.box div.flow table td {
+    font-size: 1rem;
+    color: rgba(170, 132, 29, 0.603);
+    text-align: left;
+    vertical-align: middle;
+    padding: 0.75rem;
+    border-right: 3px solid rgba(105, 103, 103, 0.2);
+    border-bottom: 3px solid rgba(105, 103, 103, 0.2);
+  }
+  body main section.info form div.box div.flow table td input.inputTd {
+    margin: 0rem;
+    width: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */
